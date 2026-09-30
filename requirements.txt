@@ -1,0 +1,18 @@
+# VenoDec backend
+#
+# torch is CPU-only here; install the matching CUDA build if you have a GPU:
+#   pip install torch --index-url https://download.pytorch.org/whl/cu121
+
+torch>=2.2,<3
+numpy>=1.26
+scipy>=1.11          # resample_poly, used instead of librosa (lighter, no numba constraint)
+soundfile>=0.12      # libsndfile WAV decoding
+
+fastapi>=0.110
+uvicorn[standard]>=0.27
+websockets>=12.0
+python-multipart>=0.0.9   # POST /analyze multipart uploads
+
+# tests
+pytest>=8.0
+httpx>=0.27          # required by fastapi.testclient

@@ -1,0 +1,10 @@
+{
+  "_comment": "Verbatim copy of `model_config` from the official clovaai/aasist config/AASIST.conf. These are the FULL AASIST hyper-parameters. AASIST-L uses filts [70,[1,32],[32,32],[32,24],[24,24]] and gat_dims [24,24]; loading AASIST-L weights against this config with strict=True would fail.",
+  "architecture": "AASIST",
+  "nb_samp": 64600,
+  "first_conv": 128,
+  "filts": [70, [1, 32], [32, 32], [32, 64], [64, 64]],
+  "gat_dims": [64, 32],
+  "pool_ratios": [0.5, 0.7, 0.5, 0.5],
+  "temperatures": [2.0, 2.0, 100.0, 100.0]
+}
